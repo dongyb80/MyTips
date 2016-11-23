@@ -22,9 +22,9 @@ wget http://www.apache.org/dist/ambari/ambari-2.4.1/apache-ambari-2.4.1-src.tar.
 * when running spart-submit command on yarn as cluster mode, change '-queue thequue' to '-queue default'
 * modify /usr/hdp/current/spark-client/conf/spark-defaults.conf and add below lines 
 
-   spark.driver.extraJavaOptions   -Dhdp.version=2.4.3.0-247 
+   *spark.driver.extraJavaOptions   -Dhdp.version=2.4.3.0-247* 
    
-   spark.yarn.am.extraJavaOptions 	-Dhdp.version=2.4.3.0-247 
+   *spark.yarn.am.extraJavaOptions 	-Dhdp.version=2.4.3.0-247* 
    
    otherwise, there would be error "bad substitution"
    
