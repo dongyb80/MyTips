@@ -28,5 +28,5 @@ wget http://www.apache.org/dist/ambari/ambari-2.4.1/apache-ambari-2.4.1-src.tar.
    
    otherwise, there would be error "bad substitution"
    
- * By default, every time spark would upload all jars under <sparkhome>/jars onto hdfs, then execute the application, delete the jars after application finishes. It wastes a lot. To make it faster, create those jars into a zip file (sparklibs.zip for example) and upload the zip file onto hdfs. Then change conf/spark-default.conf to add 'spark.yarn.archive                 hdfs:///user/dongyb/libs/spark/sparklibs.zip'
- * But it still needs to upload the application jars and other dependent jars onto hdfs each time.
+* By default, every time spark would upload all jars under <sparkhome>/jars onto hdfs, then execute the application, delete the jars after application finishes. It wastes a lot. To make it faster, create those jars into a zip file (sparklibs.zip for example) and upload the zip file onto hdfs. Then change conf/spark-default.conf to add 'spark.yarn.archive                 hdfs:///user/dongyb/libs/spark/sparklibs.zip'
+* But it still needs to upload the application jars and other dependent jars onto hdfs each time. Not find out how to avoid it yet.
