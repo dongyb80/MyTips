@@ -35,3 +35,5 @@ wget http://www.apache.org/dist/ambari/ambari-2.4.1/apache-ambari-2.4.1-src.tar.
 ## Usages 
 * Spark Window functions  
    http://xinhstechblog.blogspot.com/2016/04/spark-window-functions-for-dataframes.html
+* Online Book - more details for Spark DataFrame and Functions comparing to official programming guide  
+  https://jaceklaskowski.gitbooks.io/mastering-apache-spark/content/
